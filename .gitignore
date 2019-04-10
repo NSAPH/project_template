@@ -1,2 +1,3 @@
-tests/*
-toy_drake_example/data/*.csv
+data/*.csv
+data/*.rds
+data/*.RDS
