@@ -14,7 +14,7 @@ will provide basic instructions on how to use this template to get started on yo
 You can copy this repository directly from github to a directory of your choice using the following
 command:
 ```{bash, eval = F}
-git clone https://github.com/NSAPH/project_template.git > NEW_PROJECT_NAME
+git clone https://github.com/NSAPH/project_template.git <NEW_PROJECT_NAME>
 ```
 You will likely need to set up an rsa key on your code.harvard.edu account to use the remote git features.
 You can find information on how to set that up [here](https://help.github.com/enterprise/2.12/user/articles/adding-a-new-ssh-key-to-your-github-account). You will need at least one key set up for each computer you are working on.
