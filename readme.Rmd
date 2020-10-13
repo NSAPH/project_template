@@ -23,29 +23,32 @@ You can find information on how to set that up [here](https://help.github.com/en
 # Setting up Git
 
 After initially cloning the repository, the downloaded repository will be connected to the template repository. In order
-to set up your own project, you will first need to disconnect the repository from the project template remote repository.
-Use the following command:
+to set up your own project and clear out the old changes (i.e. what we did to create the repository) run the following command from the repository folder:
 ```
-git remote rm origin
+git rm -rf .git
+```
+Then run this command to start your new git repo:
+```
+git init
 ```
 
-You will then need to set up your own repository for the project.
+You will then need to set up your own remote repository for the project.
 First, create an empty repository (make sure to not include the readme.md option that github suggests) for your project,
-either on github or on code.harvard.edu. We recommend using code.harvard.edu, as it will make all materials only available within
-Harvard rather than fully open to the public. If you would like to make your repository public at a later date, copying it from
-code.harvard.edu to github is fairly straightforward. 
+either on github or on code.harvard.edu. We recommend using github, as you can make it private easily and add collaborators as needed. If you would like, we can also make a repository under NSAPH and add you as a collaborator (or we can fork your repository to have a copy of your work for the group).
+
+If you'd like to make the repository only avaiable in harvard, code.harvard.edu also provides github functionaliry accessible with your harvard key. Unfortunately, this code will be difficult to share outside of harvard with collaborators or when publishing a paper.
 
 Next, run the following lines to connect the template to the new repository:
-
-Connecting to a code.harvard.edu repository:
-```
-git remote add origin git@code.harvard.edu:<username>/<repository_name>.git
-git push -u origin master
-```
 
 Connecting to a github repository:
 ```
 git remote add origin https://github.com/<username>/<project>.git
+git push -u origin master
+```
+
+Connecting to a code.harvard.edu repository:
+```
+git remote add origin git@code.harvard.edu:<username>/<repository_name>.git
 git push -u origin master
 ```
 
