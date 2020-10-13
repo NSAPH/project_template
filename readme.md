@@ -98,7 +98,7 @@ Directories
         indicating the workflow.
     -   This [github
         repository](https://github.com/covidses/analysis_scripts) is a
-        goood example of how you can structure your code directory. Some
+        good example of how you can structure your code directory. Some
         things that are done here that are good to emphasize are that
         each file is used to handle a single step of data preparation,
         rather than putting all work in a single long file. Second, the
