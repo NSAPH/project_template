@@ -2,7 +2,7 @@
 title: "NSAPH Project Template"
 author: "Ben Sabath"
 date: "04/10/2019"
-output: html_document
+output: github_document
 ---
 
 This directory is an premade structure that can be directly cloned from github
